@@ -33,8 +33,8 @@ proc downloadRoblox*() =
     createDir(fmt"/home/{Username}/test/{Version}")
     
     for file, dir in PlayerDirectories:
-        var fLoc = fmt"/home/{Username}/test/{Version}/{file}"
-        var dLoc = fmt"/home/{Username}/test/{Version}/{dir}"
+        var fLoc = fmt"/home/{Username}/celestial/{Version}/{file}"
+        var dLoc = fmt"/home/{Username}/celestial/{Version}/{dir}"
     
         echo fmt"starting download for {file}"
     
@@ -49,5 +49,3 @@ proc downloadRoblox*() =
         z.extractAll(dLoc)
     
         removeFile(fLoc)
-
-downloadRoblox()
