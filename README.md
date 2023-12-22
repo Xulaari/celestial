@@ -5,7 +5,8 @@
 > celestial is in very early development, do not expect anything to work.
 
 # Planned Features
-+ ?
++ Browser launch via MIME
++ Custom execution of wine program within wineprefix
 
 # See Also
 + ?
