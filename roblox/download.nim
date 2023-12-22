@@ -30,7 +30,7 @@ proc downloadRoblox*() =
     var Version = parseJson(get("https://clientsettings.roblox.com/v2/client-version/WindowsPlayer/channel/live").body)["clientVersionUpload"].getStr()
     var workingCDN = CDN()
 
-    createDir(fmt"/home/{Username}/test/{Version}")
+    createDir(fmt"/home/{Username}/celestial/{Version}")
     
     for file, dir in PlayerDirectories:
         var fLoc = fmt"/home/{Username}/celestial/{Version}/{file}"
