@@ -1,4 +1,4 @@
-# celestial
+# <img src="assets/celestial.png" width=72> celestial
 ### celestial is an open source, minimal, bootstrapper for roblox on linux.
 
 > [!WARNING]

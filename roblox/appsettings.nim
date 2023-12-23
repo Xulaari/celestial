@@ -1,1 +1,3 @@
-# START WORK TOMORROW!
+import ../internal/xdg
+
+echo Cache

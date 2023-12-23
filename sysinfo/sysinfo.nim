@@ -1,3 +1,4 @@
+import ../internal/xdg
 import std/strformat
 import nimsimd/runtimecheck
 import strutils, osproc, cpu, distro, kernel
@@ -13,7 +14,7 @@ proc getSysInfo*() =
     Distro = getDistro()
     Kernel = getKernel()
     CPU = getCPU()
-    Wine = execProcess("wine --version").splitLines()[0]
+    Wine = execProcess(Wineroot & "/bin/wine --version").splitLines()[0]
 
     echo fmt"""
 * Nim: {NimVersion}
